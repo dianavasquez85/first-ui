@@ -1,0 +1,15 @@
+:root {
+    --color-primary: #1b4dff;
+    --color-secondary: #344054;
+    --color-danger: #d92d20;
+
+    --color-bg: #ffffff;
+    --color-fg: #101828;
+
+    --radius-md: 10px;
+
+    --space-2: 8px;
+    --space-3: 12px;
+
+    --focus-ring: 0 0 0 3px rgba(27, 77, 255, .35);
+}

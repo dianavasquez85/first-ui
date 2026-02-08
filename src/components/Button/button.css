@@ -1,0 +1,106 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    border-radius: var(--radius-md);
+    border: 1px solid transparent;
+
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 120ms ease, opacity 120ms ease, background 120ms ease, border-color 120ms ease;
+
+    padding: var(--space-2) var(--space-3);
+}
+
+.btn:focus-visible {
+    outline: none;
+    box-shadow: var(--focus-ring);
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+}
+
+.btn:disabled {
+    opacity: .55;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.btn--full {
+    width: 100%;
+}
+
+/* sizes */
+.btn--sm {
+    font-size: 12px;
+    padding: 6px 10px;
+}
+
+.btn--md {
+    font-size: 14px;
+    padding: 8px 12px;
+}
+
+.btn--lg {
+    font-size: 16px;
+    padding: 10px 14px;
+}
+
+/* variants */
+.btn--primary {
+    background: var(--color-primary);
+    color: #fff;
+}
+
+.btn--secondary {
+    background: var(--color-secondary);
+    color: #fff;
+}
+
+.btn--danger {
+    background: var(--color-danger);
+    color: #fff;
+}
+
+.btn--ghost {
+    background: transparent;
+    border-color: rgba(16, 24, 40, .25);
+    color: var(--color-fg);
+}
+
+/* spinner */
+.spinner {
+    width: 14px;
+    height: 14px;
+    border-radius: 999px;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-top-color: rgba(255, 255, 255, 1);
+    animation: spin .7s linear infinite;
+}
+
+.btn--ghost .spinner {
+    border-color: rgba(16, 24, 40, .25);
+    border-top-color: rgba(16, 24, 40, .85);
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* screen-reader only */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
