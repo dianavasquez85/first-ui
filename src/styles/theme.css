@@ -1,4 +1,9 @@
 [data-theme="dark"] {
     --color-bg: #0b1220;
     --color-fg: #f2f4f7;
+
+    --color-surface: #0f172a;
+    --color-border: rgba(242, 244, 247, 0.25);
+    --color-border-hover: rgba(242, 244, 247, 0.45);
+    --color-muted: rgba(242, 244, 247, 0.7);
 }
