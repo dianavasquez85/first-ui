@@ -24,8 +24,7 @@ npm install
 npm run dev
 npm run storybook
 npm test
-
----
+```
 
 ## Decisiones de diseño
 
@@ -34,8 +33,6 @@ npm test
 - **Storybook:** documentación viva y visual testing.
 - **Arquitectura simple:** se prioriza claridad y mantenibilidad sobre complejidad innecesaria (monorepo como posible evolución).
 
-
----
 
 ## Estructura
 
@@ -73,7 +70,6 @@ first-ui/
 │   ├── index.ts
 │   └── main.tsx
 
----
 
 ## Design tokens y theming
 - Tokens en `src/styles/tokens.css` (colores, espaciados, radios, focus ring).
@@ -81,8 +77,6 @@ first-ui/
   - `data-theme="dark"`
 
 Esto permite escalar a múltiples marcas/productos sin reescribir componentes.
-
----
 
 ## Componentes implementados
 
@@ -110,7 +104,6 @@ Incluye:
 - Generación automática de `id` mediante `useId()`
 - Preparado para validaciones y formularios reales
 
----
 
 ## Accesibilidad (a11y)
 
@@ -125,9 +118,6 @@ Los componentes siguen buenas prácticas de accesibilidad:
 
 Storybook incluye el addon de accesibilidad como apoyo para validación visual.
 
-
----
-
 ## Testing
 
 ### Unit tests con Jest + Testing Library:
@@ -141,15 +131,11 @@ Storybook incluye el addon de accesibilidad como apoyo para validación visual.
 ### Visual testing:
   - Storybook como documentación viva y apoyo para validación visual manual de estados/variantes.
 
----
-
 ## Versionamiento (SemVer)
 Se propone Semantic Versioning:
 - PATCH: fixes sin romper API
 - MINOR: features compatibles
 - MAJOR: cambios que rompen compatibilidad
-
----
 
 ## Distribución / Publicación (propuesta)
 Este repo está preparado para empaquetar como librería mediante Vite library mode.
@@ -160,8 +146,6 @@ En un siguiente paso (si el contexto lo requiere), se puede migrar a monorepo co
 - `packages/ui`
 - `packages/tokens`
 - y automatizar changelog/versionado con Changesets.
-
----
 
 ## Scripts
 
