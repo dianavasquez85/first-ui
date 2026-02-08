@@ -39,7 +39,6 @@ npm test
 
 ## Estructura
 
-```
 first-ui/
 ├── .storybook/
 │   ├── main.ts
@@ -73,7 +72,7 @@ first-ui/
 │   ├── App.tsx
 │   ├── index.ts
 │   └── main.tsx
-``` 
+
 ---
 
 ## Design tokens y theming
