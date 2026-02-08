@@ -16,6 +16,17 @@ Reducir inconsistencias visuales y duplicación de código mediante una base com
 - CSS variables (design tokens) para theming
 
 ---
+
+## Quick start
+
+```bash
+npm install
+npm run dev
+npm run storybook
+npm test
+
+---
+
 ## Decisiones de diseño
 
 - **Vite (library mode):** build rápido y preparado para tree-shaking.
@@ -39,7 +50,8 @@ first-ui/
 │   │   ├── Button.tsx
 │   │   ├── Button.types.ts
 │   │   └── index.ts
-│   ├── TextField/
+│   │
+│   │   ├── TextField/
 │   │   ├── textfield.css
 │   │   ├── TextField.stories.tsx
 │   │   ├── TextField.test.tsx
@@ -124,7 +136,7 @@ Storybook incluye el addon de accesibilidad como apoyo para validación visual.
 
 
 ### Visual testing:
-  - Storybook para documentar estados y variantes
+  - Storybook como documentación viva y apoyo para validación visual manual de estados/variantes.
 
 ---
 
