@@ -41,35 +41,39 @@ npm test
 
 ```
 first-ui/
+├── .storybook/
+│   ├── main.ts
+│   ├── preview.ts
+│   └── vitest.setup.ts
 ├── src/
 │   ├── components/
 │   │   ├── Button/
-│   │   ├── button.css
-│   │   ├── Button.stories.tsx
-│   │   ├── Button.test.tsx
-│   │   ├── Button.tsx
-│   │   ├── Button.types.ts
-│   │   └── index.ts
-│   │
-│   │   ├── TextField/
-│   │   ├── textfield.css
-│   │   ├── TextField.stories.tsx
-│   │   ├── TextField.test.tsx
-│   │   ├── TextField.tsx
-│   │   ├── TextField.types.ts
-│   │   └── index.ts
-├── styles/
-│   ├── index.css
-│   ├── theme.css
-│   └── tokens.css
-├── test/
-│   ├── setup.ts
-│   └── styleMock.ts
-├── utils/
-│   └── cn.ts
-├── index.ts
+│   │   │   ├── Button.stories.tsx
+│   │   │   ├── Button.test.tsx
+│   │   │   ├── Button.tsx
+│   │   │   ├── Button.types.ts
+│   │   │   ├── button.css
+│   │   │   └── index.ts
+│   │   └── TextField/
+│   │       ├── TextField.stories.tsx
+│   │       ├── TextField.test.tsx
+│   │       ├── TextField.tsx
+│   │       ├── TextField.types.ts
+│   │       ├── index.ts
+│   │       └── textfield.css
+│   ├── styles/
+│   │   ├── index.css
+│   │   ├── theme.css
+│   │   └── tokens.css
+│   ├── test/
+│   │   ├── setup.ts
+│   │   └── styleMock.ts
+│   ├── utils/
+│   │   └── cn.ts
+│   ├── App.tsx
+│   ├── index.ts
+│   └── main.tsx
 ``` 
-
 ---
 
 ## Design tokens y theming
